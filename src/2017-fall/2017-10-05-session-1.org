@@ -1,0 +1,192 @@
+#+Title: Coding for Adults, Session 1
+#+Author: Win Treese
+#+Date:5 October 2017
+#+bind: org-export-publishing-directory "../../2017-fall"
+
+# format string "%e %B %Y"
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:nil reveal_control:t
+#+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_width:1200 reveal_height:800
+#+OPTIONS: toc:nil
+#+OPTIONS: timestamp:nil
+
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
+#+REVEAL_MARGIN: 0.1
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_TRANS: cube
+#+REVEAL_THEME: white
+#+REVEAL_HLEVEL: 2
+#+REVEAL_HEAD_PREAMBLE: <meta name="description" content="Wayland Codes, Session 1.">
+# #+REVEAL_SLIDE_FOOTER: Wayland Codes
+#+REVEAL_EXTRA_CSS: ../../local.css
+
+
+* Agenda
+- Introductions all around
+
+- Discussion: experiences with computing
+
+- What these sessions are all about
+
+- Getting set up online
+
+- Write a little bit of code!
+
+- Regular section: Ask me anything
+
+* Introductions all around
+
+Your name
+
+Anything you would like to share about what you do in life
+
+What brings you to this group?
+
+* Discussion: experiences with computing
+
+What has been your experience with computing?
+
+Have you done any coding before?
+
+* What these sessions are all about
+
+Knowing even a little bit about how to code is a great way to better understand the technology around us
+
+Thinking computationally is another valuable tool in our mental toolbox
+
+It's easier to approach these topics in a group
+
+Making software is creative and fun!
+
+We're going to focus on coding for the web: HTML, CSS, and JavaScript.
+
+* Schedule for our sessions
+Thursdays at 7 through early December, with some exceptions:
+
+| 10/5       | 11/9 skip          |
+| 10/12 skip | 11/16              |
+| 10/19      | 11/23 Thanksgiving |
+| 10/26      | 11/30              |
+| 11/2       | 12/7               |
+* How the sessions will work
+We'll use a web site for learning: CodeCademy, and a collaboration site, GitHub.
+
+You can do CodeCademy lessons here (and at home, if you want)
+
+Typical session:
+
+1. Opening questions about what we've done so far or learning at home
+2. Work through online lessons
+3. Work on a challenge problem in pairs
+4. Share solutions and what we learned
+5. Ask me anything
+
+* Ground rules
+
+1. We're in this together.
+2. There are no stupid questions.
+3. Stop me at any time for questions.
+4. Software is a big and complicated subject, and no one knows everything about it.
+5. There's always more behind anything we talk about.
+6. We can always go deeper, but stop me if it's getting to be too much!
+7. We imagine that the main thing is the programming language, but there's always a lot of other stuff to learn around that.
+8. If something isn't working for you, let me know.
+* Getting set up online: Codecademy
+#+ATTR_HTML: :target _blank
+Open http://codecademy.com in your browser
+
+1. Create an account to login
+
+2. We're here for "web development"
+
+3. We want the "Make a Website" course
+
+We'll explore the course later, or you can get started on your own at home.
+* Getting set up: GitHub
+
+GitHub is a site for collaborative work on the web.
+
+/Note: everything on GitHub is public./
+
+#+ATTR_HTML: :target _blank
+Open http://github.com in your browser
+
+1. Create an account to login
+2. Take the free account
+3. Fill out the "tailor your experience"
+4. Click "Start a project"
+5. It will ask you to verify by sending you an email
+6. When you get the email, confirm and click "Start a project again"
+
+* Write a little bit of code!
+
+1. Put in a new project name <username>.github.io (and <username> should be your new username on GitHub)
+2. Click the box for "Initialize this repository with a README"
+3. Click "Create repository"
+4. On the next page, click "Create new file"
+5. Near the top, where it says "Name your file...", type "index.html" (no quotes)
+
+* Type in the code
+In the text box, type exactly what you see here:
+#+BEGIN_EXAMPLE
+<html>
+<head>
+<title>A new page</title>
+</head>
+<body>
+<h1>This is my first web page!</h1>
+<p>I created it myself.</p>
+</body>
+</html>
+#+END_EXAMPLE
+
+At the bottom of the page, click "Commit new file"
+
+* Let's see what we did
+1. In a new browser tab or window, open "<username>.github.io"
+2. It should look something like http://wtreese2.github.io
+3. If you want to edit your file, you can do it by clicking the pencil item on the github page
+4. After you commit a change, the web page will be available a few moments later at <username>.github.io
+
+Now email your username to =treese@acm.org= so I can add you to the Wayland Codes project!
+* Congratulations!
+
+You wrote some code and made a web page, using the same tools as professional developers use.
+* Homework
+This is all optional:
+
+- Work through some sessions on Codecademy
+- Post an issue on the WaylandCode github project (you'll get an email invitation to join it). Post an intro issue to try it out.
+- If you have coding questions, post them as issues on WaylandCodes
+- Have some fun adding to your web page, especially as you learn things from Codecademy
+- Try adding, changing, or deleting characters from the web page you made, and see what happens. You can always fix it back!
+
+* Regular section: Ask me anything
+
+Anything about computing is fair game
+
+... and no question is stupid or too basic.
+
+* Bonus: Debugging tips
+
+1. What were you trying to do?
+2. What did you expect to happen?
+2. What happened?
+3. What did you change most recently?
+
+* Bonus: Other online resources
+
+If you want to try other online resources, feel free! Search the web or try these:
+
+- Khan Academy: https://www.khanacademy.org/#/computing
+- Learn JavaScript the Hard Way: https://learncodethehardway.org/javascript/ (also Python, Ruby, etc.)
+- Lynda.com via the library
+
+* Bonus: Keeping a coding journal
+
+You may find it useful to keep a journal of:
+
+- Things you learn in coding
+- Coding ideas and questions you have
+- Problems you ran into and how you worked through them

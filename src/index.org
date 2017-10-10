@@ -1,0 +1,31 @@
+#+TITLE: Wayland Codes --- Coding for Adults
+#+OPTIONS: author:nil creator:nil date:nil num:nil
+#+OPTIONS: html-postamble:nil
+
+This is the web site for the Coding for Adults program at the [[http://waylandlibrary.org][Wayland Free Public Library]]
+
+Registration for Fall, 2017, is closed.
+
+** Schedule
+The group meets most Thursdays from 7-8:45 at the library. The first part is Q&A, with new material beginning at 7:15.
+
+Meeting are on:
+
+| 5 October 2017                             |
+| 12 October 2017 - no meeting               |
+| 19 October 2017                            |
+| 26  October 2017                           |
+| 2 November 2017                            |
+| 9 November 2017 - no meeting               |
+| 16 November 2017                           |
+| 23 November 2017 - no meeting (Thanksgiving) |
+| 30 November 2017                           |
+| 7 December 2107                            |
+
+** Session materials
+
+- Session 1, 5 October 2017: [[file:2017-fall/2017-10-05-session-1.html][notes on one page]] or [[file:2017-fall-presentations/2017-10-05-session-1.html][as slides]] (in a browser).
+
+** For more information
+
+For more information about the group, contact Win Treese (treese@acm.org).
