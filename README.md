@@ -1,1 +1,1 @@
-This is the repository for the [Coding for Adults](http://waylandcodes.github.io) program in the fall of 2017 at the (Wayland Public Library)[https://waylandlibrary.org]. See the web site for more information.
+This is the repository for the [Coding for Adults](http://waylandcodes.github.io) program in the fall of 2017 at the [Wayland Public Library](https://waylandlibrary.org). See the web site for more information.
