@@ -1,0 +1,10 @@
+#+TITLE: Wayland Codes --- Coding for Adults -- Class list
+#+OPTIONS: author:nil creator:nil date:nil num:nil
+#+OPTIONS: html-postamble:nil
+
+This is the class list for Wayland Coding for Adults.
+
+- [[http://nohamnoham.github.io][Alan]]
+- [[http://elmirataylor.github.io][Elmira]]
+- [[http://priyasawe.github.io][Priya]]
+- [[http://susanlk.github.io][Susan]]
