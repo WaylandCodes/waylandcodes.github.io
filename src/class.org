@@ -5,6 +5,7 @@
 This is the class list for Wayland Coding for Adults.
 
 - [[http://nohamnoham.github.io][Alan]]
+- [[http://wpetri.github.io][Bill]]
 - [[http://elmirataylor.github.io][Elmira]]
 - [[http://marinalibrary.github.io][Marina]]
 - [[http://priyasawe.github.io][Priya]]
