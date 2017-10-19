@@ -25,6 +25,7 @@ Meeting are on:
 ** Session materials
 
 - Session 1, 5 October 2017: [[file:2017-fall/2017-10-05-session-1.html][notes on one page]] or [[file:2017-fall-presentations/2017-10-05-session-1.html][as slides]] (in a browser).
+- Session 1, 19 October 2017: [[file:2017-fall/2017-10-19-session-2.html][notes on one page]] or [[file:2017-fall-presentations/2017-10-19-session-2.html][as slides]] (in a browser).
 
 ** For more information
 

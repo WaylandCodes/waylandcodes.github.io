@@ -3,11 +3,11 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-10-18 Wed 20:05 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Wayland Codes &#x2014; Coding for Adults</title>
+<title>Coding for Adults, Session 2</title>
 <meta name="generator" content="Org mode" />
+<meta name="author" content="Win Treese" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -228,95 +228,315 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Wayland Codes &#x2014; Coding for Adults</h1>
-<p>
-This is the web site for the Coding for Adults program at the <a href="http://waylandlibrary.org">Wayland Free Public Library</a>
-</p>
+<h1 class="title">Coding for Adults, Session 2</h1>
 
-<p>
-Registration for Fall, 2017, is closed.
-</p>
 
-<div id="outline-container-orga8454ff" class="outline-2">
-<h2 id="orga8454ff">Schedule</h2>
-<div class="outline-text-2" id="text-orga8454ff">
-<p>
-The group meets most Thursdays from 7-8:45 at the library. The first part is Q&amp;A, with new material beginning at 7:15.
-</p>
-
-<p>
-Meeting are on:
-</p>
-
+<div id="outline-container-org8243c74" class="outline-2">
+<h2 id="org8243c74">Agenda</h2>
+<div class="outline-text-2" id="text-org8243c74">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
+<col  class="org-right" />
+
 <col  class="org-left" />
 </colgroup>
 <tbody>
 <tr>
-<td class="org-left">5 October 2017</td>
+<td class="org-right">7:00 - 7:15</td>
+<td class="org-left">Q&amp;A &amp; Warm up / Codecademy time</td>
 </tr>
 
 <tr>
-<td class="org-left">12 October 2017 - no meeting</td>
+<td class="org-right">7:15</td>
+<td class="org-left">Roadmap for the fall and some background on HTML</td>
 </tr>
 
 <tr>
-<td class="org-left">19 October 2017</td>
+<td class="org-right">7:30ish</td>
+<td class="org-left">Codecademy time</td>
 </tr>
 
 <tr>
-<td class="org-left">26  October 2017</td>
+<td class="org-right">8:15</td>
+<td class="org-left">Challenge question</td>
 </tr>
 
 <tr>
-<td class="org-left">2 November 2017</td>
-</tr>
-
-<tr>
-<td class="org-left">9 November 2017 - no meeting</td>
-</tr>
-
-<tr>
-<td class="org-left">16 November 2017</td>
-</tr>
-
-<tr>
-<td class="org-left">23 November 2017 - no meeting (Thanksgiving)</td>
-</tr>
-
-<tr>
-<td class="org-left">30 November 2017</td>
-</tr>
-
-<tr>
-<td class="org-left">7 December 2107</td>
+<td class="org-right">8:30</td>
+<td class="org-left">Ask me anything &amp; wrap up</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 
-<div id="outline-container-org4061957" class="outline-2">
-<h2 id="org4061957">Session materials</h2>
-<div class="outline-text-2" id="text-org4061957">
+<div id="outline-container-org6b8d50e" class="outline-2">
+<h2 id="org6b8d50e">Warm up time</h2>
+<div class="outline-text-2" id="text-org6b8d50e">
+<p>
+Ask questions
+</p>
+
+<p>
+or
+</p>
+
+<p>
+Get started on Codecademy lessons
+</p>
+
+<p>
+<i>Type everything in Codecademy yourself!</i>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org96aa1df" class="outline-2">
+<h2 id="org96aa1df">Code you might have seen before</h2>
+<div class="outline-text-2" id="text-org96aa1df">
+<pre class="example">
+READ(5,501) A,B,C
+501 FORMAT(3I5)
+IF(A.EQ.0 .OR. B.EQ.0 .OR. C.EQ.0) STOP 1
+S = (A + B + C) / 2.0
+AREA = SQRT( S * (S - A) * (S - B) * (S - C) )
+</pre>
+
+<p>
+or
+</p>
+
+<pre class="example">
+10 Cls
+20 Print "Helloooooooooooooooo, world! I'm ready to learn"
+30 Sleep
+40 End
+</pre>
+
+<p>
+or
+</p>
+
+<pre class="example">
+Program Lesson1_Program1;
+Begin
+	Write('Hello World. Prepare to learn PASCAL!!');
+	Readln;
+End.
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org73d84bd" class="outline-2">
+<h2 id="org73d84bd">Why does HTML look so different?</h2>
+<div class="outline-text-2" id="text-org73d84bd">
+<p>
+HTML = Hypertext Markup Language
+</p>
+
+<p>
+Goal: tell a computer about the <i>structure</i> of a document
+</p>
+
+<pre class="example">
+&lt;h1&gt;Chapter 1&lt;/h1&gt;
+&lt;h2&gt;Section 1&lt;/h2&gt;
+&lt;p&gt;A paragraph about my topic, with three points:
+&lt;ol&gt;
+&lt;li&gt; My first item
+&lt;li&gt; My second item
+&lt;li&gt; My third item
+&lt;/ol&gt;
+and continue the paragraph.
+&lt;/p&gt;
+&lt;p&gt;And another paragraph&lt;/p&gt;
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgd150c91" class="outline-2">
+<h2 id="orgd150c91">HTML is <i>declarative</i></h2>
+<div class="outline-text-2" id="text-orgd150c91">
+<p>
+HTML is a <i>declarative</i> language.
+</p>
+
+<p>
+The ones we saw above  are called <i>imperative</i>.
+</p>
+
+<p>
+And it doesn&rsquo;t have much to say about style or appearance.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org647b54a" class="outline-2">
+<h2 id="org647b54a">HTML is <i>interpreted</i></h2>
+<div class="outline-text-2" id="text-org647b54a">
+<p>
+We can have a mental model of the computer processes code.
+</p>
+
+<p>
+FORTRAN is compiled: the computer reads the whole program to make sure that the <i>syntax</i> is right. (That doesn&rsquo;t meant the code works!)
+</p>
+
+<p>
+A computer can also <i>interpret</i> a program: read a little bit of it, do a little work, repeat.
+</p>
+
+<p>
+When there&rsquo;s a problem, stop!
+</p>
+</div>
+</div>
+
+<div id="outline-container-org017f640" class="outline-2">
+<h2 id="org017f640">An example of when this happens</h2>
+<div class="outline-text-2" id="text-org017f640">
+<pre class="example">
+&lt;h1&gt;My title&lt;h1/&gt;
+&lt;p&gt;A paragraph of text&lt;/p&gt;
+</pre>
+
+<p>
+ends up looking like:
+</p>
+
+<h1>My title<h1/>
+<p>A paragraph of text</p>
+</h1>
+
+<p>
+instead of:
+</p>
+
+<h1>My title</h1>
+<p>A paragraph of text</p>
+</div>
+</div>
+
+<div id="outline-container-org48183f3" class="outline-2">
+<h2 id="org48183f3">Debugging tips</h2>
+<div class="outline-text-2" id="text-org48183f3">
+<ol class="org-ol">
+<li>What were you trying to do?</li>
+<li>What did you expect to happen?</li>
+<li>What happened?</li>
+<li>What did you change most recently?</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org11c1697" class="outline-2">
+<h2 id="org11c1697">Roadmap for the fall</h2>
+<div class="outline-text-2" id="text-org11c1697">
+<p>
+2 sessions on HTML
+</p>
+
+<p>
+1 session on CSS (Cascading Style Sheets) - about style
+</p>
+
+<p>
+3 sessions on JavaScript - like the imperative code, make things active
+</p>
+</div>
+</div>
+
+<div id="outline-container-org011cc30" class="outline-2">
+<h2 id="org011cc30">Codecademy time</h2>
+<div class="outline-text-2" id="text-org011cc30">
+<p>
+Work on Codecademy lessons &#x2013; ask questions if you need help!
+</p>
+
+<p>
+<i>Type everything in Codecademy yourself!</i>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc0a16ea" class="outline-2">
+<h2 id="orgc0a16ea">Challenge question</h2>
+<div class="outline-text-2" id="text-orgc0a16ea">
+<p>
+Make a web page that looks something like this:
+</p>
+
+<div class="demo">
+<h1>The state of the world</h1>
+<p>Have you ever wondered what is going on?</p>
+<ul>
+<li> in your neighborhood?</li>
+<li> in your country?</li>
+<li> in the world</li>
+</ul>
+<h2>or what can be done?</h2>
+<ol>
+<li>You can do something</li>
+<li>I can do something</li>
+<li>We can do something</li>
+</ol>
+<p>
+<img height="100px" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-1/bikes1.jpg"/>
+<p>
+<p>and the image comes from https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-1/bikes1.jpg</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3ab017f" class="outline-2">
+<h2 id="org3ab017f">Ask me anything</h2>
+</div>
+
+<div id="outline-container-orge2dd3e3" class="outline-2">
+<h2 id="orge2dd3e3">Homework (entirely optional)</h2>
+<div class="outline-text-2" id="text-orge2dd3e3">
+<p>
+Keeping working on on Codecademy
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfce64f1" class="outline-2">
+<h2 id="orgfce64f1">Bonus: Other online resources</h2>
+<div class="outline-text-2" id="text-orgfce64f1">
+<p>
+If you want to try other online resources, feel free! Search the web or try these:
+</p>
+
 <ul class="org-ul">
-<li>Session 1, 5 October 2017: <a href="2017-fall/2017-10-05-session-1.html">notes on one page</a> or <a href="2017-fall-presentations/2017-10-05-session-1.html">as slides</a> (in a browser).</li>
-<li>Session 1, 19 October 2017: <a href="2017-fall/2017-10-19-session-2.html">notes on one page</a> or <a href="2017-fall-presentations/2017-10-19-session-2.html">as slides</a> (in a browser).</li>
+<li>Khan Academy: <a href="https://www.khanacademy.org/#/computing">https://www.khanacademy.org/#/computing</a></li>
+<li>Learn JavaScript the Hard Way: <a href="https://learncodethehardway.org/javascript/">https://learncodethehardway.org/javascript/</a> (also Python, Ruby, etc.)</li>
+<li>Lynda.com via the library</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orge504302" class="outline-2">
-<h2 id="orge504302">For more information</h2>
-<div class="outline-text-2" id="text-orge504302">
+<div id="outline-container-org66429ce" class="outline-2">
+<h2 id="org66429ce">Bonus: Keeping a coding journal</h2>
+<div class="outline-text-2" id="text-org66429ce">
 <p>
-For more information about the group, contact Win Treese (treese@acm.org).
+You may find it useful to keep a journal of:
 </p>
+
+<ul class="org-ul">
+<li>Things you learn in coding</li>
+<li>Coding ideas and questions you have</li>
+<li>Problems you ran into and how you worked through them</li>
+</ul>
 </div>
 </div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 19 October 2017</p>
+<p class="author">Author: Win Treese</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
