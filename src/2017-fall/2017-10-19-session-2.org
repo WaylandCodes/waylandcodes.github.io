@@ -1,0 +1,199 @@
+#+Title: Coding for Adults, Session 2
+#+Author: Win Treese
+#+Date:19 October 2017
+#+bind: org-export-publishing-directory "../../2017-fall"
+
+# format string "%e %B %Y"
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:nil reveal_control:t
+#+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_width:1200 reveal_height:800
+#+OPTIONS: toc:nil
+#+OPTIONS: timestamp:nil
+
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
+#+REVEAL_MARGIN: 0.1
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_TRANS: cube
+#+REVEAL_THEME: white
+#+REVEAL_HLEVEL: 2
+#+REVEAL_HEAD_PREAMBLE: <meta name="description" content="Wayland Codes, Session 1.">
+# #+REVEAL_SLIDE_FOOTER: Wayland Codes
+#+REVEAL_EXTRA_CSS: ../css/present.css
+#+REVEAL_EXTRA_CSS: ../../../css/present.css
+
+
+* Agenda
+
+| 7:00 - 7:15 | Q&A & Warm up / Codecademy time |
+| 7:15 | Roadmap for the fall and some background on HTML |
+| 7:30ish | Codecademy time |
+| 8:15 | Challenge question |
+| 8:30 | Ask me anything & wrap up |
+
+* Warm up time
+
+Ask questions
+
+or
+
+Get started on Codecademy lessons
+
+/Type everything in Codecademy yourself!/
+
+* Code you might have seen before
+#+BEGIN_EXAMPLE
+READ(5,501) A,B,C
+501 FORMAT(3I5)
+IF(A.EQ.0 .OR. B.EQ.0 .OR. C.EQ.0) STOP 1
+S = (A + B + C) / 2.0
+AREA = SQRT( S * (S - A) * (S - B) * (S - C) )
+#+END_EXAMPLE
+
+or
+
+#+BEGIN_EXAMPLE
+10 Cls
+20 Print "Helloooooooooooooooo, world! I'm ready to learn"
+30 Sleep
+40 End
+#+END_EXAMPLE
+
+or
+
+#+BEGIN_EXAMPLE
+Program Lesson1_Program1;
+Begin
+	Write('Hello World. Prepare to learn PASCAL!!');
+	Readln;
+End.
+#+END_EXAMPLE
+
+* Why does HTML look so different?
+
+HTML = Hypertext Markup Language
+
+Goal: tell a computer about the /structure/ of a document
+
+#+BEGIN_EXAMPLE
+<h1>Chapter 1</h1>
+<h2>Section 1</h2>
+<p>A paragraph about my topic, with three points:
+<ol>
+<li> My first item
+<li> My second item
+<li> My third item
+</ol>
+and continue the paragraph.
+</p>
+<p>And another paragraph</p>
+#+END_EXAMPLE
+
+* HTML is /declarative/
+
+HTML is a /declarative/ language.
+
+The ones we saw above  are called /imperative/.
+
+And it doesn't have much to say about style or appearance.
+
+* HTML is /interpreted/
+
+We can have a mental model of the computer processes code.
+
+FORTRAN is compiled: the computer reads the whole program to make sure that the /syntax/ is right. (That doesn't meant the code works!)
+
+A computer can also /interpret/ a program: read a little bit of it, do a little work, repeat.
+
+When there's a problem, stop!
+
+* An example of when this happens
+
+#+BEGIN_EXAMPLE
+<h1>My title<h1/>
+<p>A paragraph of text</p>
+#+END_EXAMPLE
+
+ends up looking like:
+
+#+BEGIN_EXPORT html
+<h1>My title<h1/>
+<p>A paragraph of text</p>
+</h1>
+#+END_EXPORT
+
+instead of:
+
+#+BEGIN_EXPORT html
+<h1>My title</h1>
+<p>A paragraph of text</p>
+#+END_EXPORT
+
+* Debugging tips
+
+1. What were you trying to do?
+2. What did you expect to happen?
+2. What happened?
+3. What did you change most recently?
+
+* Roadmap for the fall
+
+2 sessions on HTML
+
+1 session on CSS (Cascading Style Sheets) - about style
+
+3 sessions on JavaScript - like the imperative code, make things active
+
+* Codecademy time
+
+Work on Codecademy lessons -- ask questions if you need help!
+
+/Type everything in Codecademy yourself!/
+
+* Challenge question
+
+Make a web page that looks something like this:
+
+#+BEGIN_EXPORT html
+<div class="demo">
+<h1>The state of the world</h1>
+<p>Have you ever wondered what is going on?</p>
+<ul>
+<li> in your neighborhood?</li>
+<li> in your country?</li>
+<li> in the world</li>
+</ul>
+<h2>or what can be done?</h2>
+<ol>
+<li>You can do something</li>
+<li>I can do something</li>
+<li>We can do something</li>
+</ol>
+<p>
+<img height="100px" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-1/bikes1.jpg"/>
+<p>
+<p>and the image comes from https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-1/bikes1.jpg</p>
+</div>
+#+END_EXPORT
+
+* Ask me anything
+
+* Homework (entirely optional)
+
+Keeping working on on Codecademy
+
+* Bonus: Other online resources
+
+If you want to try other online resources, feel free! Search the web or try these:
+
+- Khan Academy: https://www.khanacademy.org/#/computing
+- Learn JavaScript the Hard Way: https://learncodethehardway.org/javascript/ (also Python, Ruby, etc.)
+- Lynda.com via the library
+
+* Bonus: Keeping a coding journal
+
+You may find it useful to keep a journal of:
+
+- Things you learn in coding
+- Coding ideas and questions you have
+- Problems you ran into and how you worked through them

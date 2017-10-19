@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Coding for Adults, Session 2</title>
+<meta name="author" content="(Win Treese)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/white.css" id="theme"/>
+
+<link rel="stylesheet" href="../css/present.css"/>
+
+<link rel="stylesheet" href="../../../css/present.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'http://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<meta name="description" content="Wayland Codes, Session 1.">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Coding for Adults, Session 2</h1><h2 class="author">Win Treese</h2><h2 class="date">19 October 2017</h2>
+</section>
+
+
+<section>
+<section id="slide-orgbdb9e52">
+<h2 id="orgbdb9e52">Agenda</h2>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">7:00 - 7:15</td>
+<td class="org-left">Q&amp;A &amp; Warm up / Codecademy time</td>
+</tr>
+
+<tr>
+<td class="org-right">7:15</td>
+<td class="org-left">Roadmap for the fall and some background on HTML</td>
+</tr>
+
+<tr>
+<td class="org-right">7:30ish</td>
+<td class="org-left">Codecademy time</td>
+</tr>
+
+<tr>
+<td class="org-right">8:15</td>
+<td class="org-left">Challenge question</td>
+</tr>
+
+<tr>
+<td class="org-right">8:30</td>
+<td class="org-left">Ask me anything &amp; wrap up</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+</section>
+<section>
+<section id="slide-org79c13f9">
+<h2 id="org79c13f9">Warm up time</h2>
+<p>
+Ask questions
+</p>
+
+<p>
+or
+</p>
+
+<p>
+Get started on Codecademy lessons
+</p>
+
+<p>
+<i>Type everything in Codecademy yourself!</i>
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgf2dcfaa">
+<h2 id="orgf2dcfaa">Code you might have seen before</h2>
+<pre class="example">
+READ(5,501) A,B,C
+501 FORMAT(3I5)
+IF(A.EQ.0 .OR. B.EQ.0 .OR. C.EQ.0) STOP 1
+S = (A + B + C) / 2.0
+AREA = SQRT( S * (S - A) * (S - B) * (S - C) )
+</pre>
+
+<p>
+or
+</p>
+
+<pre class="example">
+10 Cls
+20 Print "Helloooooooooooooooo, world! I'm ready to learn"
+30 Sleep
+40 End
+</pre>
+
+<p>
+or
+</p>
+
+<pre class="example">
+Program Lesson1_Program1;
+Begin
+	Write('Hello World. Prepare to learn PASCAL!!');
+	Readln;
+End.
+</pre>
+
+</section>
+</section>
+<section>
+<section id="slide-org31a3afd">
+<h2 id="org31a3afd">Why does HTML look so different?</h2>
+<p>
+HTML = Hypertext Markup Language
+</p>
+
+<p>
+Goal: tell a computer about the <i>structure</i> of a document
+</p>
+
+<pre class="example">
+&lt;h1&gt;Chapter 1&lt;/h1&gt;
+&lt;h2&gt;Section 1&lt;/h2&gt;
+&lt;p&gt;A paragraph about my topic, with three points:
+&lt;ol&gt;
+&lt;li&gt; My first item
+&lt;li&gt; My second item
+&lt;li&gt; My third item
+&lt;/ol&gt;
+and continue the paragraph.
+&lt;/p&gt;
+&lt;p&gt;And another paragraph&lt;/p&gt;
+</pre>
+
+</section>
+</section>
+<section>
+<section id="slide-org95bdab8">
+<h2 id="org95bdab8">HTML is <i>declarative</i></h2>
+<p>
+HTML is a <i>declarative</i> language.
+</p>
+
+<p>
+The ones we saw above  are called <i>imperative</i>.
+</p>
+
+<p>
+And it doesn&rsquo;t have much to say about style or appearance.
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org5a3c5de">
+<h2 id="org5a3c5de">HTML is <i>interpreted</i></h2>
+<p>
+We can have a mental model of the computer processes code.
+</p>
+
+<p>
+FORTRAN is compiled: the computer reads the whole program to make sure that the <i>syntax</i> is right. (That doesn&rsquo;t meant the code works!)
+</p>
+
+<p>
+A computer can also <i>interpret</i> a program: read a little bit of it, do a little work, repeat.
+</p>
+
+<p>
+When there&rsquo;s a problem, stop!
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org005eaa8">
+<h2 id="org005eaa8">An example of when this happens</h2>
+<pre class="example">
+&lt;h1&gt;My title&lt;h1/&gt;
+&lt;p&gt;A paragraph of text&lt;/p&gt;
+</pre>
+
+<p>
+ends up looking like:
+</p>
+
+<h1>My title<h1/>
+<p>A paragraph of text</p>
+</h1>
+
+<p>
+instead of:
+</p>
+
+<h1>My title</h1>
+<p>A paragraph of text</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org7927117">
+<h2 id="org7927117">Debugging tips</h2>
+<ol>
+<li>What were you trying to do?</li>
+<li>What did you expect to happen?</li>
+<li>What happened?</li>
+<li>What did you change most recently?</li>
+
+</ol>
+
+</section>
+</section>
+<section>
+<section id="slide-org08c9e56">
+<h2 id="org08c9e56">Roadmap for the fall</h2>
+<p>
+2 sessions on HTML
+</p>
+
+<p>
+1 session on CSS (Cascading Style Sheets) - about style
+</p>
+
+<p>
+3 sessions on JavaScript - like the imperative code, make things active
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org7515f60">
+<h2 id="org7515f60">Codecademy time</h2>
+<p>
+Work on Codecademy lessons &#x2013; ask questions if you need help!
+</p>
+
+<p>
+<i>Type everything in Codecademy yourself!</i>
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgbcbe130">
+<h2 id="orgbcbe130">Challenge question</h2>
+<p>
+Make a web page that looks something like this:
+</p>
+
+<div class="demo">
+<h1>The state of the world</h1>
+<p>Have you ever wondered what is going on?</p>
+<ul>
+<li> in your neighborhood?</li>
+<li> in your country?</li>
+<li> in the world</li>
+</ul>
+<h2>or what can be done?</h2>
+<ol>
+<li>You can do something</li>
+<li>I can do something</li>
+<li>We can do something</li>
+</ol>
+<p>
+<img height="100px" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-1/bikes1.jpg"/>
+<p>
+<p>and the image comes from https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-1/bikes1.jpg</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org53c73d5">
+<h2 id="org53c73d5">Ask me anything</h2>
+
+</section>
+</section>
+<section>
+<section id="slide-orgbc007dd">
+<h2 id="orgbc007dd">Homework (entirely optional)</h2>
+<p>
+Keeping working on on Codecademy
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgadf6fbd">
+<h2 id="orgadf6fbd">Bonus: Other online resources</h2>
+<p>
+If you want to try other online resources, feel free! Search the web or try these:
+</p>
+
+<ul>
+<li>Khan Academy: <a href="https://www.khanacademy.org/#/computing">https://www.khanacademy.org/#/computing</a></li>
+<li>Learn JavaScript the Hard Way: <a href="https://learncodethehardway.org/javascript/">https://learncodethehardway.org/javascript/</a> (also Python, Ruby, etc.)</li>
+<li>Lynda.com via the library</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org149abfa">
+<h2 id="org149abfa">Bonus: Keeping a coding journal</h2>
+<p>
+You may find it useful to keep a journal of:
+</p>
+
+<ul>
+<li>Things you learn in coding</li>
+<li>Coding ideas and questions you have</li>
+<li>Problems you ran into and how you worked through them</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+width: 1200,
+height: 800,
+margin: 0.10,
+minScale: 0.50,
+maxScale: 2.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>

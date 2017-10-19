@@ -4,3 +4,27 @@
 .reveal h2 {
     text-transform: none;
 }
+.reveal p {
+    text-align: left;
+}
+
+.demo {
+    text-align: left;
+    background-color: white;
+}
+
+.demo h1 {
+    font-size: 40px;
+}
+
+.demo h2 {
+    font-size: 28px;
+}
+
+.demo p {
+    font-size: 16px;
+}
+
+.demo li {
+    font-size: 16px;
+}
