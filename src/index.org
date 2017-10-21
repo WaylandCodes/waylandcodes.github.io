@@ -11,21 +11,23 @@ The group meets most Thursdays from 7-8:45 at the library. The first part is Q&A
 
 Meeting are on:
 
-| 5 October 2017                             |
-| 12 October 2017 - no meeting               |
-| 19 October 2017                            |
-| 26  October 2017                           |
-| 2 November 2017                            |
-| 9 November 2017 - no meeting               |
-| 16 November 2017                           |
-| 23 November 2017 - no meeting (Thanksgiving) |
-| 30 November 2017                           |
-| 7 December 2107                            |
+| Date                                         | Slides (in the browser) | Notes on one page |
+|----------------------------------------------+-------------------------+-------------------|
+| 5 October 2017                               | [[file:2017-fall-presentations/2017-10-05-session-1.html][Session 1 slides]]        | [[file:2017-fall/2017-10-05-session-1.html][Session 1 notes]]   |
+| 12 October 2017 - no meeting                 | -                       | -                 |
+| 19 October 2017                              | [[file:2017-fall-presentations/2017-10-19-session-2.html][Session 2 slides]]        | [[file:2017-fall/2017-10-19-session-2.html][notes on one page]] |
+| 26  October 2017                             |                         |                   |
+| 2 November 2017                              |                         |                   |
+| 9 November 2017 - no meeting                 |                         |                   |
+| 16 November 2017                             |                         |                   |
+| 23 November 2017 - no meeting (Thanksgiving) |                         |                   |
+| 30 November 2017                             |                         |                   |
+| 7 December 2107                              |                         |                   |
 
 ** Session materials
 
-- Session 1, 5 October 2017: [[file:2017-fall/2017-10-05-session-1.html][notes on one page]] or [[file:2017-fall-presentations/2017-10-05-session-1.html][as slides]] (in a browser).
-- Session 1, 19 October 2017: [[file:2017-fall/2017-10-19-session-2.html][notes on one page]] or [[file:2017-fall-presentations/2017-10-19-session-2.html][as slides]] (in a browser).
+- Session 1, 5 October 2017: ]] or
+- Session 1, 19 October 2017:
 
 ** For more information
 
