@@ -1,0 +1,21 @@
+#+bind: org-export-publishing-directory "../../2017-fall"
+
+# format string "%e %B %Y"
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:nil reveal_control:t
+#+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_width:1200 reveal_height:800
+#+OPTIONS: toc:nil
+#+OPTIONS: timestamp:nil
+
+#+XREVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
+#+REVEAL_ROOT: http://lab.hakim.se/reveal-js
+#+REVEAL_MARGIN: 0.1
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_TRANS: cube
+#+REVEAL_THEME: white
+#+REVEAL_HLEVEL: 2
+#+REVEAL_HEAD_PREAMBLE: <meta name="description" content="Wayland Codes">
+# #+REVEAL_SLIDE_FOOTER: Wayland Codes
+#+REVEAL_EXTRA_CSS: ../css/present.css
+#+REVEAL_EXTRA_CSS: ../../../css/present.css

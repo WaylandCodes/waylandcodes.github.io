@@ -1,0 +1,105 @@
+#+Title: Coding for Adults, Session 3
+#+Author: Win Treese
+#+Date:26 October 2017
+
+#+INCLUDE: "./reveal-config.org"
+
+* Agenda
+
+| 7:00 - 7:15 | Q&A & Warm up / Codecademy time |
+| 7:15 | Roadmap for the fall and some background on HTML |
+| 7:30ish | Codecademy time |
+| 8:30ish |Wrap up |
+
+* Warm up time
+
+Ask questions
+
+or
+
+Keep going on Codecademy lessons
+
+* HTML comments
+To put a comment in:
+
+~<!-- your comment -->~
+
+Doesn't have to be all on one line.
+
+* Tags: begin/end vs. self-closing
+
+Some tags have open and close:
+#+BEGIN_EXAMPLE
+<h1> headline </h1>
+#+END_EXAMPLE
+
+Some are self-closing, when there's not anything to enclose, like ~img~:
+
+#+BEGIN_EXAMPLE
+<img src="http://foo.com/bar.jpg"/>
+#+END_EXAMPLE
+
+* Does white space matter?
+
+Pretty much, no.
+
+#+BEGIN_EXAMPLE
+<title> My title </title>
+#+END_EXAMPLE
+
+or
+
+#+BEGIN_EXAMPLE
+<title>
+My
+title
+</title>
+#+END_EXAMPLE
+
+* How do I put in a less than sign? <
+
+To put in a < sign:
+
+#+BEGIN_EXAMPLE
+&lt;
+#+END_EXAMPLE
+
+There are many other characters like this, such as ~&gt;~, etc.
+* Key points about CSS: Cascading Style Sheets
+
+- Lets you separate the visual appearance from the content
+  - Change visual design without changing every web page
+  - Can provide different formats for computer, mobile device, printing, etc.
+
+Examples: [[https://www.w3schools.com/css/css_intro.asp][CSS Introduction]]
+
+* Basic structure of CSS rules
+#+BEGIN_EXAMPLE
+.myclass h2 { color: purple; }
+
+#myid { background: blue; }
+
+#+END_EXAMPLE
+
+Example selectors:
+- ~.myclass~ matches a ~class=~ in the HTML
+- ~h2~ applies to the ~h2~ HTML element
+- ~#myid~ applies to HTML tags with an ~id=~ attribute
+
+* What's this "cascading" thing?
+
+Styles can come from different places, and each has a priority (simplified here)
+
+1. Inline - HTML "style" attribute
+2. User-defined - if the user set something in the browser
+3. More specific rules
+4. Most recently seen rule
+5. Inherit from parent (e.g., setting the font for a div class)
+6. CSS defined in the HTML document
+7. Browser defaults
+
+* Codecademy time
+
+Work on Codecademy lessons -- ask questions if you need help!
+
+/Type everything in Codecademy yourself!/

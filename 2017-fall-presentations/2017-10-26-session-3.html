@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Coding for Adults, Session 3</title>
+<meta name="author" content="(Win Treese)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="http://lab.hakim.se/reveal-js/css/reveal.css"/>
+
+<link rel="stylesheet" href="http://lab.hakim.se/reveal-js/css/theme/white.css" id="theme"/>
+
+<link rel="stylesheet" href="../css/present.css"/>
+
+<link rel="stylesheet" href="../../../css/present.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'http://lab.hakim.se/reveal-js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<meta name="description" content="Wayland Codes">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Coding for Adults, Session 3</h1><h2 class="author">Win Treese</h2><h2 class="date">26 October 2017</h2>
+</section>
+
+<section>
+<section id="slide-orgeddc090">
+<h2 id="orgeddc090">Agenda</h2>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">7:00 - 7:15</td>
+<td class="org-left">Q&amp;A &amp; Warm up / Codecademy time</td>
+</tr>
+
+<tr>
+<td class="org-left">7:15</td>
+<td class="org-left">Roadmap for the fall and some background on HTML</td>
+</tr>
+
+<tr>
+<td class="org-left">7:30ish</td>
+<td class="org-left">Codecademy time</td>
+</tr>
+
+<tr>
+<td class="org-left">8:30ish</td>
+<td class="org-left">Wrap up</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+</section>
+<section>
+<section id="slide-org36dc535">
+<h2 id="org36dc535">Warm up time</h2>
+<p>
+Ask questions
+</p>
+
+<p>
+or
+</p>
+
+<p>
+Keep going on Codecademy lessons
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgdbe032c">
+<h2 id="orgdbe032c">HTML comments</h2>
+<p>
+To put a comment in:
+</p>
+
+<p>
+<code>&lt;!-- your comment --&gt;</code>
+</p>
+
+<p>
+Doesn&rsquo;t have to be all on one line.
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgbb7049b">
+<h2 id="orgbb7049b">Tags: begin/end vs. self-closing</h2>
+<p>
+Some tags have open and close:
+</p>
+<pre class="example">
+&lt;h1&gt; headline &lt;/h1&gt;
+</pre>
+
+<p>
+Some are self-closing, when there&rsquo;s not anything to enclose, like <code>img</code>:
+</p>
+
+<pre class="example">
+&lt;img src="http://foo.com/bar.jpg"/&gt;
+</pre>
+
+</section>
+</section>
+<section>
+<section id="slide-org3443cbb">
+<h2 id="org3443cbb">Does white space matter?</h2>
+<p>
+Pretty much, no.
+</p>
+
+<pre class="example">
+&lt;title&gt; My title &lt;/title&gt;
+</pre>
+
+<p>
+or
+</p>
+
+<pre class="example">
+&lt;title&gt;
+My
+title
+&lt;/title&gt;
+</pre>
+
+</section>
+</section>
+<section>
+<section id="slide-orgfea3ccd">
+<h2 id="orgfea3ccd">How do I put in a less than sign? &lt;</h2>
+<p>
+To put in a &lt; sign:
+</p>
+
+<pre class="example">
+&amp;lt;
+</pre>
+
+<p>
+There are many other characters like this, such as <code>&amp;gt;</code>, etc.
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orga73a91a">
+<h2 id="orga73a91a">Key points about CSS: Cascading Style Sheets</h2>
+<ul>
+<li>Lets you separate the visual appearance from the content
+<ul>
+<li>Change visual design without changing every web page</li>
+<li>Can provide different formats for computer, mobile device, printing, etc.</li>
+
+</ul></li>
+
+</ul>
+
+<p>
+Examples: <a href="https://www.w3schools.com/css/css_intro.asp">CSS Introduction</a>
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orge0c88a1">
+<h2 id="orge0c88a1">Basic structure of CSS rules</h2>
+<pre class="example">
+.myclass h2 { color: purple; }
+
+#myid { background: blue; }
+
+</pre>
+
+<p>
+Example selectors:
+</p>
+<ul>
+<li><code>.myclass</code> matches a <code>class=</code> in the HTML</li>
+<li><code>h2</code> applies to the <code>h2</code> HTML element</li>
+<li><code>#myid</code> applies to HTML tags with an <code>id=</code> attribute</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org6a1562d">
+<h2 id="org6a1562d">What&rsquo;s this &ldquo;cascading&rdquo; thing?</h2>
+<p>
+Styles can come from different places, and each has a priority (simplified here)
+</p>
+
+<ol>
+<li>Inline - HTML &ldquo;style&rdquo; attribute</li>
+<li>User-defined - if the user set something in the browser</li>
+<li>More specific rules</li>
+<li>Most recently seen rule</li>
+<li>Inherit from parent (e.g., setting the font for a div class)</li>
+<li>CSS defined in the HTML document</li>
+<li>Browser defaults</li>
+
+</ol>
+
+</section>
+</section>
+<section>
+<section id="slide-orgff90fd7">
+<h2 id="orgff90fd7">Codecademy time</h2>
+<p>
+Work on Codecademy lessons &#x2013; ask questions if you need help!
+</p>
+
+<p>
+<i>Type everything in Codecademy yourself!</i>
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="http://lab.hakim.se/reveal-js/lib/js/head.min.js"></script>
+<script src="http://lab.hakim.se/reveal-js/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+width: 1200,
+height: 800,
+margin: 0.10,
+minScale: 0.50,
+maxScale: 2.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'http://lab.hakim.se/reveal-js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'http://lab.hakim.se/reveal-js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://lab.hakim.se/reveal-js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://lab.hakim.se/reveal-js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'http://lab.hakim.se/reveal-js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
