@@ -1,1 +1,1 @@
-((org-mode . ((my/org-export-dir ".."))))
+((org-mode . ((my/org-export-dir . ".."))))
