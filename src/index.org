@@ -16,7 +16,7 @@ Meeting are on:
 | 5 October 2017                               | [[file:2017-fall/2017-10-05-session-1.html][Session 1 notes]]   |
 | 12 October 2017 - no meeting                 | -                 |
 | 19 October 2017                              | [[file:2017-fall/2017-10-19-session-2.html][notes on one page]] |
-| 26  October 2017                             |                   |
+| 26 October 2017                              | [[file:2017-fall/2017-10-26-session-3.html][notes on one page]] |
 | 2 November 2017                              |                   |
 | 9 November 2017 - no meeting                 |                   |
 | 16 November 2017                             |                   |
