@@ -1,0 +1,73 @@
+#+Title: Coding for Adults, Session 5
+#+Author: Win Treese
+#+Date: 16 November 2017
+
+#+INCLUDE: "./reveal-config.org"
+
+* Agenda
+
+| 7:00 - 7:15 | Q&A & Warm up / Codecademy time |
+| 7:15 | Some thoughts about JavaScript |
+| 7:30ish | Codecademy time |
+| 8:30ish |Wrap up |
+
+* Warm up time
+
+Ask questions
+
+or
+
+Keep going on Codecademy lessons
+
+* Some thoughts about JavaScript
+When to use ~=~, ~==~, and ~===~?
+
+= Assigning a variable.
+
+== Compares for equality operator with confusing type conversion (e.g., between numbers and strings). DO NOT USE!
+
+=== Compares for equality.
+
+* Using ~=~ in an if
+If you put ~=~ in an in ~if~ predicate, it will probably not do what you want.
+
+Try this in a Codecademy Javascript window ()
+#+BEGIN_EXAMPLE
+let x = 3;
+
+if (x = 0) {
+  console.log('condition is true, x is ' + x);
+} else {
+console.log('condition is false, x is ' + x);
+}
+
+#+END_EXAMPLE
+
+You can do this in any Javascript window and run it. It just won't be the right answer to the exercise!
+* Ternary conditional operator
+
+#+BEGIN_SRC javascript
+condition ? expression1 : expression2
+#+END_SRC
+
+Often hard to follow in reading it.
+
+Avoid it!
+
+* Defining function
+
+Arrow functions:
+
+#+BEGIN_SRC javascript
+const f = () => {
+    return 3;
+}
+#+END_SRC
+
+You will see other syntax for defining function in Codecademy and if you are reading other code.
+
+In your code, mostly stick to arrow functions until you are comfortable with the differences and when to use them.
+
+* Codecademy time
+
+Work on Codecademy lessons -- ask questions if you need help!

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Coding for Adults, Session 5</title>
+<meta name="author" content="(Win Treese)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="http://lab.hakim.se/reveal-js/css/reveal.css"/>
+
+<link rel="stylesheet" href="http://lab.hakim.se/reveal-js/css/theme/white.css" id="theme"/>
+
+<link rel="stylesheet" href="../css/present.css"/>
+
+<link rel="stylesheet" href="../../../css/present.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'http://lab.hakim.se/reveal-js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<meta name="description" content="Wayland Codes">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Coding for Adults, Session 5</h1><h2 class="author">Win Treese</h2><h2 class="date">16 November 2017</h2>
+</section>
+
+<section>
+<section id="slide-orgbbd6680">
+<h2 id="orgbbd6680">Agenda</h2>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">7:00 - 7:15</td>
+<td class="org-left">Q&amp;A &amp; Warm up / Codecademy time</td>
+</tr>
+
+<tr>
+<td class="org-left">7:15</td>
+<td class="org-left">Some thoughts about JavaScript</td>
+</tr>
+
+<tr>
+<td class="org-left">7:30ish</td>
+<td class="org-left">Codecademy time</td>
+</tr>
+
+<tr>
+<td class="org-left">8:30ish</td>
+<td class="org-left">Wrap up</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+</section>
+<section>
+<section id="slide-org3e44674">
+<h2 id="org3e44674">Warm up time</h2>
+<p>
+Ask questions
+</p>
+
+<p>
+or
+</p>
+
+<p>
+Keep going on Codecademy lessons
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org8955895">
+<h2 id="org8955895">Some thoughts about JavaScript</h2>
+<p>
+When to use <code>=</code>, <code>==</code>, and <code>===</code>?
+</p>
+
+<p>
+= Assigning a variable.
+</p>
+
+<p>
+== Compares for equality operator with confusing type conversion (e.g., between numbers and strings). DO NOT USE!
+</p>
+
+<p>
+<code>=</code> Compares for equality.
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org2cee18c">
+<h2 id="org2cee18c">Using <code>=</code> in an if</h2>
+<p>
+If you put <code>=</code> in an in <code>if</code> predicate, it will probably not do what you want.
+</p>
+
+<p>
+Try this in a Codecademy Javascript window ()
+</p>
+<pre class="example">
+let x = 3;
+
+if (x = 0) {
+  console.log('condition is true, x is ' + x);
+} else {
+console.log('condition is false, x is ' + x);
+}
+
+</pre>
+
+<p>
+You can do this in any Javascript window and run it. It just won&rsquo;t be the right answer to the exercise!
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org7f17f3b">
+<h2 id="org7f17f3b">Ternary conditional operator</h2>
+<div class="org-src-container">
+
+<pre  class="src src-javascript">condition ? expression1 : expression2
+</pre>
+</div>
+
+<p>
+Often hard to follow in reading it.
+</p>
+
+<p>
+Avoid it!
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org5fa24f5">
+<h2 id="org5fa24f5">Defining function</h2>
+<p>
+Arrow functions:
+</p>
+
+<div class="org-src-container">
+
+<pre  class="src src-javascript"><span style="color: #859900;">const</span> <span style="color: #268bd2;">f</span> = () =&gt; {
+    <span style="color: #859900;">return</span> 3;
+}
+</pre>
+</div>
+
+<p>
+You will see other syntax for defining function in Codecademy and if you are reading other code.
+</p>
+
+<p>
+In your code, mostly stick to arrow functions until you are comfortable with the differences and when to use them.
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orge74ada2">
+<h2 id="orge74ada2">Codecademy time</h2>
+<p>
+Work on Codecademy lessons &#x2013; ask questions if you need help!
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="http://lab.hakim.se/reveal-js/lib/js/head.min.js"></script>
+<script src="http://lab.hakim.se/reveal-js/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+width: 1200,
+height: 800,
+margin: 0.10,
+minScale: 0.50,
+maxScale: 2.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'http://lab.hakim.se/reveal-js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'http://lab.hakim.se/reveal-js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://lab.hakim.se/reveal-js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://lab.hakim.se/reveal-js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'http://lab.hakim.se/reveal-js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
