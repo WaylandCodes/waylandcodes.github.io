@@ -21,7 +21,7 @@ Meeting are on:
 | 9 November 2017 - no meeting                 | -                 |
 | 16 November 2017                             | [[file:2017-fall/2017-11-16-session-5.html][notes on one page]] |
 | 23 November 2017 - no meeting (Thanksgiving) | -                 |
-| 30 November 2017                             |                   |
+| 30 November 2017                             | [[file:2017-fall-presentations/2017-11-30%20Coding%20for%20Adults%20session%206.pdf][PDF slides]]        |
 | 7 December 2107                              |                   |
 
 ** For more information
